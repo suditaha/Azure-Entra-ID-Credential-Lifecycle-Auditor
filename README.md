@@ -1,0 +1,1 @@
+# Azure-Entra-ID-Credential-Lifecycle-Auditor
