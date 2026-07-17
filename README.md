@@ -1,5 +1,7 @@
 # 🔑 Azure Entra ID Credential Lifecycle Auditor
 
+<img width="966" height="437" alt="Screenshot 2026-07-17 at 2 11 25 PM" src="https://github.com/user-attachments/assets/96efaebb-75e8-4d54-be0d-9c00e6440ddf" />
+
 A CLI tool that audits Azure App Registration credentials — client secrets and certificates — for age, expiration, and rotation health, producing audit-ready evidence for SOC 2 (CC6.1) and NIST 800-53 (IA-4) compliance.
 
 Client secrets and certificates are easy to forget once created: they cause unexpected downtime when they expire, or become a security liability when left active far longer than they should be. This tool scans an Azure tenant's App Registrations, evaluates every credential's lifecycle against a configurable policy, and classifies findings by risk so security teams and auditors can act on stale or soon-to-expire credentials before they become a problem.
@@ -58,12 +60,16 @@ A stateless command-line tool that queries Azure directly — no persistent infr
 
 ## 🚀 How It Works
 
+<img width="1568" height="676" alt="image" src="https://github.com/user-attachments/assets/9c26a7ee-400d-4222-ae39-e3993a83615e" />
+
 1. **Initialization:** The script is run from the terminal, optionally with custom risk thresholds.
 2. **Authentication:** The tool authenticates using the active Azure CLI session via `DefaultAzureCredential` — no separate API keys needed.
 3. **Data Retrieval:** It queries the Microsoft Graph API for all App Registrations and their associated credentials.
 4. **Analysis:** Each credential's age and remaining time to expiration are calculated.
 5. **Risk Classification:** Credentials violating the configured lifecycle policy are flagged and categorized by urgency.
 6. **Reporting:** A summary is printed to the terminal, and detailed findings are saved locally as audit evidence.
+
+<img width="1568" height="348" alt="image" src="https://github.com/user-attachments/assets/e29721e4-709c-4a20-823e-2b4add0e8bce" />
 
 ---
 
