@@ -78,6 +78,8 @@ A stateless command-line tool that queries Azure directly — no persistent infr
 - **No Hardcoded Secrets:** `DefaultAzureCredential` removes the need to store API keys or credentials in the environment.
 - **Least Privilege:** The tool requires only the `Application.Read.All` Microsoft Graph scope — read-only, with no ability to modify tenant data.
 - **Safe Data Handling:** Microsoft Graph never returns plaintext secret values, and neither does this tool — only metadata (creation and expiration dates) is inspected or logged.
+<img width="1568" height="517" alt="image" src="https://github.com/user-attachments/assets/3dcb3443-1846-424f-ad9e-e341d5893501" />
+
 - **Secure Communication:** All Microsoft Graph API traffic is enforced over TLS 1.2+.
 
 ---
