@@ -1,4 +1,4 @@
-# 🔑 Azure Entra ID Credential Lifecycle Auditor
+# 🔑 Azure App Registration Credential Lifecycle Auditor
 
 <img width="966" height="437" alt="Screenshot 2026-07-17 at 2 11 25 PM" src="https://github.com/user-attachments/assets/96efaebb-75e8-4d54-be0d-9c00e6440ddf" />
 
